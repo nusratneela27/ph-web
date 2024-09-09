@@ -1,0 +1,33 @@
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 600px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.slide-container {
+  position: relative;
+}
+
+.slide-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  background: linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.5));
+}
